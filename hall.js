@@ -36,3 +36,5 @@ sendPostRequest('', requestData)
     console.log('Список фильмов:', films);
     console.log('Список сеансов:', seances);
   });
+
+  // не пойму что за ошибка 
