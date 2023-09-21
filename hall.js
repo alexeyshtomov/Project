@@ -31,7 +31,7 @@ async function getHallConfig(timestamp, hallId, seanceId) {
   }
   
   
-  const timestamp; 
+  const timestamp = ''; 
   const hallId = ''; 
   const seanceId = ''; 
   
