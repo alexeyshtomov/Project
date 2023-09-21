@@ -9,14 +9,14 @@ async function sendPostRequest(endpoint, data) {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: data, // Ваш запрос в формате x-www-form-urlencoded
+      body: data, 
     });
 
     if (!response.ok) {
       throw new Error(`Ошибка HTTP: ${response.status}`);
     }
 
-    // Распарсить ответ в формате JSON
+    
     const jsonResponse = await response.json();
     
     
