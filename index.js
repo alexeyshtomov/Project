@@ -28,7 +28,7 @@ async function sendPostRequest(endpoint, data) {
 }
 
 const requestData = 'event=update';
-sendPostRequest('https://jscp-diplom.netoserver.ru/', requestData) 
+sendPostRequest('', requestData) 
   .then((data) => {
     // Обработка данных из ответа API
     const halls = data.halls.result; // Список залов
