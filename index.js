@@ -40,3 +40,36 @@ sendPostRequest('', requestData)
     console.log('Список фильмов:', films);
     console.log('Список сеансов:', seances);
   });
+
+  function displayHalls(halls) {
+    const hallList = document.getElementById('hall-list');
+    hallList.innerHTML = ''; 
+  
+    halls.forEach((hall) => {
+      const hallItem = document.createElement('div');
+      hallItem.textContent = `Зал: ${hall.hall_name}, Ряды: ${hall.hall_rows}, Места: ${hall.hall_places}`;
+      hallList.appendChild(hallItem);
+    });
+  }
+  
+  function displayFilms(films) {
+    const filmList = document.getElementById('film-list');
+    filmList.innerHTML = ''; 
+  
+    films.forEach((film) => {
+      const filmItem = document.createElement('div');
+      filmItem.textContent = `Фильм: ${film.film_name}, Продолжительность: ${film.film_duration} минут, Страна: ${film.film_origin}`;
+      filmList.appendChild(filmItem);
+    });
+  }
+  
+  function displaySeances(seances) {
+    const seanceList = document.getElementById('seance-list');
+    seanceList.innerHTML = ''; 
+  
+    seances.forEach((seance) => {
+      const seanceItem = document.createElement('div');
+      seanceItem.textContent = `Сеанс: ${seance.seance_time}`;
+      seanceList.appendChild(seanceItem);
+    });
+  }
