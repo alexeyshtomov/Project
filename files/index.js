@@ -4,7 +4,7 @@ const requestData = {
   event: 'update',
 };
 
-const endpoint = 'https://jscp-diplom.netoserver.ru/';
+const endpoint = '';
 (async () => {
   try {
     const response = await sendApiRequest(endpoint, requestData);
